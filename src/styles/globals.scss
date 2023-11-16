@@ -5,11 +5,13 @@
 @layer base {
   :root {
     --cool-gray-200: #e5e7eb;
+    --gray-100: #F4F4F5;
     --gray-400: #a1a1aa;
     --gray-700: #3f3f46;
     --black: #000;
     --white: #fff;
     --violet-600: #7c3aed;
+    --violet-800: #5B21B6;
   }
 
   * {
@@ -18,7 +20,7 @@
 
   html,
   body {
-    @apply bg-[--cool-gray-200] font-regular;
+    @apply bg-[--cool-gray-200] font-helRegular text-base text-[--black] leading-normal;
   }
 
   a {
@@ -46,6 +48,13 @@
     letter-spacing: 0.03em;
     font-weight: 300;
   }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
 
   @media screen and (width >= 768px) {
     h1 {

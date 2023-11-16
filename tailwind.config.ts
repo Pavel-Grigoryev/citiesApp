@@ -9,8 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        regular: ['var(--font-helvetica-regular)'],
-        medium: ['var(--font-helvetica-medium)'],
+        helRegular: ['var(--font-helvetica-regular)'],
+        helMedium: ['var(--font-helvetica-medium)'],
+      },
+      spacing: {
+        0.75: '0.1875rem',
+        2.75: '0.6875rem',
+      },
+      transitionTimingFunction: {
+        DEFAULT: 'ease-in',
+      },
+      transitionDuration: {
+        DEFAULT: '300ms',
       },
     },
   },

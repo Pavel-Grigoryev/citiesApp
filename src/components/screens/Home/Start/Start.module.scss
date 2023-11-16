@@ -1,0 +1,32 @@
+.startBlock {
+  @apply max-w-xl w-full bg-[--white] rounded-2xl;
+
+  .header {
+    @apply p-4 flex items-center justify-center border-b-2 border-[--gray-100];
+  }
+
+  .textBlock {
+    @apply p-6 prose-sm;
+  }
+
+  .title {
+    @apply mt-0;
+  }
+
+  .list {
+    @apply pl-4;
+  }
+
+  .listItem {
+    @apply relative;
+
+    &::before {
+      @apply absolute content-[''] inline-block w-0.75 h-0.75 rounded bg-[--black] -left-1.5 top-2.75;
+    }
+  }
+
+  .butWrapper {
+    @apply flex justify-center;
+  }
+
+}
