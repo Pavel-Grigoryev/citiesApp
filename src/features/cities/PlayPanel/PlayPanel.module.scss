@@ -1,0 +1,11 @@
+.playPanel {
+  @apply max-w-xl w-full bg-[--white] rounded-2xl;
+
+  .playDesk {
+    @apply h-[320px] relative;
+  }
+
+  .startText {
+    @apply absolute text-sm text-[--gray-400] top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4;
+  }
+}

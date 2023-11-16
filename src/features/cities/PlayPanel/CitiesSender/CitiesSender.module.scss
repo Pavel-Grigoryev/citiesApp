@@ -1,0 +1,23 @@
+.sender {
+  @apply p-4 relative;
+
+  .input {
+    @apply py-3.5 pl-3 pr-16 bg-[--cool-gray-100] rounded-md w-full;
+
+    &::placeholder {
+      @apply text-[--gray-700];
+    }
+  }
+
+  .inputDis {
+    &::placeholder {
+      @apply text-[--gray-400];
+    }
+  }
+
+  .butWrapper {
+    @apply absolute top-1/2 right-6 -translate-y-2/4;
+  }
+}
+
+

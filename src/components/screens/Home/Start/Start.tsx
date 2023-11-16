@@ -3,6 +3,8 @@
 import React from 'react';
 import s from './Start.module.scss';
 import { Button } from '@/components/common/Button';
+import { useActions } from '@/common/hooks';
+import { citiesActions } from '@/features/cities';
 
 const rulesData: RuleData[] = [
   {
@@ -20,11 +22,16 @@ const rulesData: RuleData[] = [
 ];
 
 export const Start = () => {
+  const { fetchCities } = useActions(citiesActions);
   const rules = rulesData.map((rule) => (
     <li key={rule.id} className={s.listItem}>
       {rule.desc}
     </li>
   ));
+
+  const onclickHandler = () => {
+    fetchCities();
+  };
 
   return (
     <article className={s.startBlock}>
@@ -33,7 +40,7 @@ export const Start = () => {
         <p className={s.title}>Цель: Назвать как можно больше реальных городов.</p>
         <ul className={s.list}>{rules}</ul>
         <div className={s.butWrapper}>
-          <Button name="Начать игру" onclickHandler={() => {}} />
+          <Button name="Начать игру" onclickHandler={onclickHandler} />
         </div>
       </div>
     </article>

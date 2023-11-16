@@ -15,6 +15,7 @@ const config: Config = {
       spacing: {
         0.75: '0.1875rem',
         2.75: '0.6875rem',
+        4.25: '1.0625rem',
       },
       transitionTimingFunction: {
         DEFAULT: 'ease-in',
