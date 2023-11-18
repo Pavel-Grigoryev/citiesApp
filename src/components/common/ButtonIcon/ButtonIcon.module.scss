@@ -1,0 +1,13 @@
+.button {
+@apply py-1.5 px-2 bg-[--violet-500] rounded-md;
+
+  .icon {
+    @apply inline-block;
+  }
+}
+
+.butDis {
+  @apply bg-[--gray-400]
+}
+
+

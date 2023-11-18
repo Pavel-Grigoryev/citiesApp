@@ -1,11 +1,37 @@
+
+
 .playPanel {
   @apply max-w-xl w-full bg-[--white] rounded-2xl;
 
+  .panelHeaderCont {
+    @apply relative;
+  }
+
+  .timerWrapper {
+    @apply absolute w-full left-0 bottom-px;
+  }
+
+  .playDeskCont {
+    @apply relative;
+  }
+
   .playDesk {
-    @apply h-[320px] relative;
+    @apply h-[300px] relative flex flex-col gap-y-2 px-4 pt-4 pb-5 mb-5 overflow-y-scroll;
   }
 
   .startText {
     @apply absolute text-sm text-[--gray-400] top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4;
+  }
+
+  .citiesQuantText {
+    @apply absolute text-sm text-[--gray-400] -bottom-6 left-1/2 -translate-x-2/4;
+  }
+
+  .userStyle {
+    @apply px-3 py-1.5 bg-[--violet-500] text-[--white] inline-block ml-auto rounded-xl rounded-br-none;
+  }
+
+  .robotStyle {
+    @apply px-3 py-1.5 bg-[--violet-50] text-[--gray-700] inline-block mr-auto rounded-xl rounded-bl-none;
   }
 }

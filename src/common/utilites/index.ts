@@ -1,0 +1,1 @@
+export { getLastLetter } from './getLastLetter';

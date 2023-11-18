@@ -1,0 +1,7 @@
+.timeText {
+  @apply absolute font-helMedium text-xl right-4 -top-10;
+}
+
+.lineProgress {
+  @apply h-1 bg-[--violet-300] z-10;
+}
