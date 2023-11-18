@@ -34,8 +34,10 @@ export const Start = () => {
   };
 
   return (
-    <article className={s.startBlock}>
-      <header className={s.header}>Игра в города на время</header>
+    <section className={s.startBlock}>
+      <header className={s.header}>
+        <h1>Игра в города на время</h1>
+      </header>
       <div className={s.textBlock}>
         <p className={s.title}>Цель: Назвать как можно больше реальных городов.</p>
         <ul className={s.list}>{rules}</ul>
@@ -43,7 +45,7 @@ export const Start = () => {
           <Button name="Начать игру" onclickHandler={onclickHandler} />
         </div>
       </div>
-    </article>
+    </section>
   );
 };
 

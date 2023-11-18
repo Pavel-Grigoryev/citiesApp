@@ -16,6 +16,8 @@
     --violet-500: #8B5CF6;
     --violet-600: #7c3aed;
     --violet-800: #5B21B6;
+    --green-600: #16A34A;
+    --red-600: #DC2626;
   }
 
   * {
@@ -33,63 +35,6 @@
   }
 
   h1 {
-    font-size: 2.8125rem;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    line-height: 120%;
-  }
-
-  h2 {
-    font-size: 2.375rem;
-    line-height: 105%;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-  }
-
-  h3 {
-    font-size: 1.3125rem;
-    line-height: 140%;
-    letter-spacing: 0.03em;
-    font-weight: 300;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-
-  @media screen and (width >= 768px) {
-    h1 {
-      font-size: 3.75rem;
-      line-height: 105%;
-      letter-spacing: 0.03em;
-    }
-
-    h2 {
-      font-size: 2.9375rem;
-    }
-
-    h3 {
-      font-size: 1.875rem;
-      line-height: 150%;
-    }
-  }
-
-  @media screen and (width >= 1024px) {
-    h1 {
-      font-size: 7.1875rem;
-      line-height: 110%;
-      letter-spacing: 0.03em;
-    }
-
-    h2 {
-      font-size: 4rem;
-    }
-
-    h3 {
-      font-size: 2.5rem;
-    }
+    @apply text-inherit;
   }
 }

@@ -9,3 +9,4 @@ export const selectLastEnteredCity = createSelector(
   selectNamedCities,
   (cities) => cities[cities.length - 1]
 );
+export const selectIsGameOver = (state: AppRootState) => state.cities.isGameOver;

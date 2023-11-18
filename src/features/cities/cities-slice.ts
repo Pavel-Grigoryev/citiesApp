@@ -36,6 +36,9 @@ export const slice = createSlice({
     setNamedCity(state, action: PayloadAction<{ city: NamedCity }>) {
       state.namedCities.push(action.payload.city);
     },
+    clearNamedCity(state) {
+      state.namedCities = [];
+    },
     setIsGameOver(state, action: PayloadAction<{ isGameOver: boolean }>) {
       state.isGameOver = action.payload.isGameOver;
     },

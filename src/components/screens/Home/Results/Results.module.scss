@@ -1,0 +1,16 @@
+.results {
+  @apply text-xl leading-normal max-w-xl w-full bg-[--white] rounded-2xl p-10 text-center flex flex-col items-center justify-center
+  gap-y-8;
+}
+
+.time {
+  @apply font-helMedium leading-normal text-[--green-600] text-3xl;
+}
+
+.timeRobot {
+  @apply text-[--red-600];
+}
+
+.lastCity {
+  @apply font-helMedium;
+}

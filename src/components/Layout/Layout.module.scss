@@ -1,3 +1,9 @@
 .main {
   @apply flex min-h-screen flex-col items-center justify-center p-24;
+
+  @media screen and (max-width: 992px) {
+    & {
+      @apply px-5;
+    }
+  }
 }
