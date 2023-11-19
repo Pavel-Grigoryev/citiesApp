@@ -44,7 +44,6 @@ export const Results = () => {
             Последний город названный победителем <br />{' '}
             <span className={s.lastCity}>{lastEnteredCity.name}</span>
           </p>
-          <Button name="Начать новую игру" onclickHandler={onclickHandler} />
         </>
       ) : (
         <p>
@@ -52,6 +51,7 @@ export const Results = () => {
           Ничья! <br /> Никто не назвал ни одного города.
         </p>
       )}
+      <Button name="Начать новую игру" onclickHandler={onclickHandler} />
     </section>
   );
 };
