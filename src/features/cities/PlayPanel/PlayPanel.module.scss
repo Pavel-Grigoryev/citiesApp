@@ -24,7 +24,7 @@
   }
 
   .citiesQuantText {
-    @apply absolute text-sm text-[--gray-400] -bottom-6 left-1/2 -translate-x-2/4;
+    @apply absolute text-sm text-center text-[--gray-400] -bottom-9 sm:-bottom-6 left-1/2 -translate-x-2/4;
   }
 
   .userStyle {
